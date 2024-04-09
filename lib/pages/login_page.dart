@@ -42,14 +42,14 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             //logo
             Icon(
-              Icons.lock_open_outlined,
+              Icons.fastfood_rounded,
               size: 72,
               color: Theme.of(context).colorScheme.inversePrimary,
             ),
             const SizedBox(height: 25),
             //message
             Text(
-              "Food Delivery App",
+              "VIGGLY",
               style: TextStyle(
                 fontSize: 16,
                 color: Theme.of(context).colorScheme.inversePrimary,

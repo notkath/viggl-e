@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class FoodPage extends StatefulWidget {
   const FoodPage({super.key});
 
@@ -29,10 +30,10 @@ class _FoodPageState extends State<FoodPage>
         body: Column(
       children: [
         // food image
-        Image.asset(widget.food.imagePath),
+        Image.asset('/Users/derrickrichard/Desktop/sharwarma.jpeg'),
         // food name
         Text(
-          widget.food.name,
+          'Sharwarma',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
@@ -40,7 +41,7 @@ class _FoodPageState extends State<FoodPage>
         ),
         // food description
         Text(
-          widget.food.description,
+          'Cheesy and filled with mayo!',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 20,
