@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:viggly_one/components/my_drawer_tile.dart';
+
+import '../pages/settings_page.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
@@ -17,6 +20,36 @@ class MyDrawer extends StatelessWidget {
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: Divider(
+                color: Theme.of(context).colorScheme.secondary,
+              ),
+            ),
+            MyDrawerTile(
+              text: "HOME",
+              icon: Icons.home,
+              onTap: () => Navigator.pop(context),
+            ),
+            MyDrawerTile(
+                text: "SETTINGS",
+                icon: Icons.settings,
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SettingsPage(),
+                      ));
+                }),
+            const Spacer(),
+            MyDrawerTile(
+                text: "LOGOUT",
+                icon: Icons.logout,
+                onTap: () {
+                  Navigator.pop(context);
+                }),
+            const SizedBox(height: 25),
           ],
         ));
   }
