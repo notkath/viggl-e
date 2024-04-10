@@ -72,7 +72,7 @@ import 'package:flutter/material.dart';
 import 'package:viggly_one/models/restaurant.dart';
 import 'package:viggly_one/models/food.dart';
 
-class Restaurant_3 extends StatelessWidget {
+class Restaurant_n extends StatelessWidget {
   final List<Food> foodMenu = Restaurant.getlist();
 
   @override

@@ -8,13 +8,13 @@ class MyCurrentLoctaion extends StatelessWidget {
     return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Deliver Now'),
+        Text(''),
         Row(
           children: [
             //address
-            Text('Address here'),
+            Text(''),
             //drop down menu
-            Icon(Icons.keyboard_arrow_down_rounded),
+            //Icon(I),
           ],
         ),
       ],

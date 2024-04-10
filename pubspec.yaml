@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  shared_preferences: ^2.0.15
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -60,9 +61,24 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - lib/images/Main/
+    - lib/images/Drinks/
+    - lib/images/Desserts/
+    - lib/images/sw.jpeg
+    - lib/images/br.jpeg
+    - lib/images/bp.jpeg
+    - lib/images/cw.webp
+    - lib/images/ef.webp
+    - lib/images/ws.webp
+    - lib/images/c1.png
+    - lib/images/c2.jpeg
+    - lib/images/c3.jpeg
+    - lib/images/c4.jpeg
+    - lib/images/ns.jpeg
+    - lib/images/gk.jpeg
+    - lib/images/logo.jpeg
+    - lib/images/logo1.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -75,9 +91,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
+  fonts:
+    - family: Lucida Calligraphy
+      fonts:
+        - asset: fonts/LucidaCalligraphyNew.ttf
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
